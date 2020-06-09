@@ -34,6 +34,7 @@
         <div class="product">
           <h3>Вахтёр</h3>
           <table class="table-description">
+            <caption>Ржаной хлеб, Вода, Солод, Соль</caption>
             <tr>
               <td class="first-col">Алк.</td>
               <td class="second-col">&lt; 1%</td>
@@ -43,7 +44,6 @@
               <td class="second-col">35</td>
             </tr>
           </table>
-          <p>Ржаной хлеб, Вода, Солод, Соль</p>
           <div class="product-logo">
             <img src="img/bottle-left.jpg" alt="prod-1">
           </div>
@@ -57,6 +57,7 @@
         <div class="product">
           <h3>Романтик</h3>
           <table class="table-description">
+            <caption>Ячменный хлеб, Вода, Солод, Апельсин</caption>
             <tr>
               <td>Алк.</td>
               <td>&lt; 0,5%</td>
@@ -66,7 +67,6 @@
               <td>27</td>
             </tr>
           </table>
-          <p>Ячменный хлеб, Вода, Солод, Апельсин</p>
           <div class="product-logo">
             <img src="img/bottle-right.jpg" alt="prod-2">
           </div>
@@ -188,71 +188,76 @@
   </div>
 
   <div class="ordering">
-    <h2 class="section-title">Заказать</h2>
-    <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас.
-      При заказе от 10 баррелей — скидка 10%.
-    </p>
-    <form class="order-form" action="/" method="post">
-      <div class="order-form-group">
-        <label for="name">Представьтесь:</label>
-        <input type="text" name="name" id="name">
-      </div>
-      <div class="order-form-group">
-        <label for="phone">Номер телефона:</label>
-        <input type="text" name="phone" id="phone">
-      </div>
-      <div class="order-form-group">
-        <label for="extraPhone">Доп. номер:</label>
-        <input type="text" name="extraPhone" id="extraPhone">
-      </div>
-      <div class="order-form-group">
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email">
-      </div>
-      <div class="order-form-group">
-        <label for="orderValue">Объём заказа:</label> <br />
-        <select name="orderValue" id="orderValue">
-          <option value="1">От 5 до 10 баррелей в неделю</option>
-        </select>
-      </div>
-      <div class="order-form-group">
-        <label for="comment">Доп. комментарий:</label>
-        <textarea name="comment" id="comment"></textarea>
-      </div>
-      <div class="checkbox-area">
-        <label>
-          <input type="checkbox" name="description" id="description" checked>
-          Я согласен получать квасную рассылку
-        </label>
-      </div>
-      <input type="submit" class="btn" value="Отправить заказ">
-    </form>
+    <div class="container-small">
+      <h2 class="section-title">Заказать</h2>
+      <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас
+        сейчас.
+        При заказе от 10 баррелей — скидка 10%.
+      </p>
+      <form class="order-form" action="/" method="post">
+        <div class="order-form-group">
+          <label for="name">Представьтесь:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="order-form-group">
+          <label for="phone">Номер телефона:</label>
+          <input type="text" name="phone" id="phone">
+        </div>
+        <div class="order-form-group">
+          <label for="extraPhone">Доп. номер:</label>
+          <input type="text" name="extraPhone" id="extraPhone">
+        </div>
+        <div class="order-form-group">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="order-form-group">
+          <label for="orderValue">Объём заказа:</label> <br />
+          <select name="orderValue" id="orderValue">
+            <option value="1">От 5 до 10 баррелей в неделю</option>
+          </select>
+        </div>
+        <div class="order-form-group">
+          <label for="comment">Доп. комментарий:</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+        <div class="checkbox-area">
+          <label>
+            <input type="checkbox" name="description" id="description" checked>
+            Я согласен получать квасную рассылку
+          </label>
+        </div>
+        <input type="submit" class="btn" value="Отправить заказ">
+      </form>
+    </div>
   </div>
 
   <div class="page-footer">
-    <div class="footer-top">
-      <div class="logo">
-        <img src="img/logo.png" alt="logo">
+    <div class="container-big">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="logo">
+        </div>
+        <ul class="nav">
+          <li><a href="#">История</a></li>
+          <li><a href="#">Производство</a></li>
+          <li><a href="#">Ассортимент</a></li>
+          <li><a href="#">Где купить</a></li>
+        </ul>
       </div>
-      <ul class="nav">
-        <li><a href="#">История</a></li>
-        <li><a href="#">Производство</a></li>
-        <li><a href="#">Ассортимент</a></li>
-        <li><a href="#">Где купить</a></li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-social">
-        <a class="social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
-        <a class="social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
-        <a class="social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
-      </div>
-      <p>При перепечатке материалов ссылка на сайт обязательна!</p>
-      <div class="footer-copyright">
-        <p>
-          <img src="img/htmlacademy.png" alt="ha-logo"><strong>Разработчик: </strong><a
-            href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
+      <div class="footer-bottom clearfix">
+        <div class="footer-social">
+          <a class="social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
+          <a class="social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
+          <a class="social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
+        </div>
+        <p>При перепечатке материалов ссылка на сайт обязательна!</p>
+        <div class="footer-copyright">
+          <p>
+            <img src="img/htmlacademy.png" alt="ha-logo"><strong>Разработчик: </strong><a
+              href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

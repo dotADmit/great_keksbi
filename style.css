@@ -37,6 +37,10 @@ body {
     width: 141px;
     height: 78px;
 }
+.header-logo img {
+    width: 141px;
+    height: 78px;
+}
 .main-nav {
     float: right;
     width: 600px;
@@ -89,13 +93,29 @@ body {
     width: 340px;
     float: left;
     padding-left: 35px;
+    position: relative;
 }
 .product:last-child {
     padding-left: 60px;
 }
+.product .table-description {
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+.table-description caption {
+    caption-side: bottom;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: normal;
+    text-transform: none;
+}
 
-.product-logo img {
-    height: 460px;
+.product-logo {
+    height: auto;
+    width: 100%;
+    text-align: center;
 }
 .table-description {
     line-height: 30px;
@@ -105,17 +125,13 @@ body {
     text-transform: uppercase;
     text-align: left;
     border-collapse: collapse;
+    width: 151px;
 }
 .table-description td {
     border: 1px solid #e5e5e5;
     padding: 10px;
 }
-.table-description .first-col {
-    width: 57px;
-}
-.table-description .second-col {
-    width: 50px;
-}
+
 .features {
     background-color: #ffcb78;
     padding-top: 80px;
@@ -269,11 +285,20 @@ body {
 }
 .ordering {
     background-color: #ffcb78;
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+.ordering p{
+    margin: 0;
+    padding-top: 90px;
+    padding-bottom: 75px;
+    width: 650px;
 }
 .order-form {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
+    width: 630px;
 }
 
 .order-form input[type="text"],
@@ -298,12 +323,24 @@ body {
 .page-footer {
     background-color: black;
     color: white;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+.footer-top {
+    position: relative;
 }
 .page-footer ul {
     list-style: none;
+    position: absolute;
+    top: 0;
+    width: 600px;
+    right: 100px;
+    padding: 0;
 }
 .page-footer ul li {
     text-transform: uppercase;
+    display: inline-block;
 }
 .page-footer ul a {
     color: white;
@@ -326,4 +363,19 @@ body {
 .footer-bottom {
     color:#989898;
     font-size: 14px;
+}
+.footer-bottom .footer-social,
+.footer-bottom > p {
+    float: left;
+    width: 215px;
+    margin: 0;
+}
+.footer-copyright {
+    float: right;
+    width: 305px;
+}
+.footer-logo {
+    padding-left: 12px;
+    width: 141px;
+    height: 78px;
 }
