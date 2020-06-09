@@ -45,19 +45,27 @@ body {
     float: right;
     width: 600px;
     margin: 0;
-    padding: 0;
+    margin-top: 13px;
+    padding: 13px 0;
     list-style: none;
     font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .page-header ul li {
     text-transform: uppercase;
+    float: left;
+    margin-right: 54px;
+}
+.page-header ul li:last-child {
+    margin-right: 0;
 }
 .page-header a {
     color: white;
     text-decoration: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 19px 0;
 }
 .page-header a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 1);
@@ -70,6 +78,35 @@ body {
     color: rgba(131, 71, 0);
     text-decoration: none;
     text-transform: uppercase;
+    display:inline-block;
+    vertical-align: top;
+    border: 2px solid rgba(131, 71, 0);
+    padding:10px 21px;
+    font: inherit;
+    font-weight: bold;
+}
+.btn:hover {
+    color: #6a3900;
+    border-color: #6a3900;
+}
+.btn:active {
+    color: #d9d1ca;
+    border-color: #d2c3b2;
+}
+.btn-quick-order {
+    color: white;
+    background-color: #6a3900;
+    border-color: #6a3900;
+}
+.btn-quick-order:hover {
+    color: white;
+    background-color: #834700;
+    border-color: #834700;
+}
+.btn-quick-order:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #834700;
+    border-color: #834700;
 }
 .page-header .promo {
     font-family: Arial, sans-serif;
