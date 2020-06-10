@@ -15,10 +15,10 @@
           <img src="img/logo.png" alt="logo">
         </div>
         <ul class="main-nav">
-          <li><a href="#">История</a></li>
-          <li><a href="#">Производство</a></li>
-          <li><a href="#">Ассортимент</a></li>
-          <li><a href="#">Где купить</a></li>
+          <li><a href="#history">История</a></li>
+          <li><a href="#features">Производство</a></li>
+          <li><a href="#assort">Ассортимент</a></li>
+          <li><a href="#ordering">Где купить</a></li>
         </ul>
       </div>
       <div class="promo">
@@ -80,26 +80,26 @@
     </div>
   </div>
 
-  <div class="features">
+  <div id="features" class="features">
     <div class="container-big">
       <ul>
         <li class="feature-item feature-craft">
           <h2 class="feature-title">Варим сами</h2>
-          Вот этими самыми руками. Экспериментируем и творим, что хотим.
+          <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
         </li>
         <li class="feature-item feature-self">
           <h2 class="feature-title ">Своё, родное</h2>
-          Не заработка ради, а импортозамещения для. Поднимаем производство.
+          <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
         </li>
         <li class="feature-item feature-quality">
           <h2 class="feature-title ">Не экономим</h2>
-          Человек это то, что он ест и пьёт. У нас только качественные ингредиенты.
+          <p>Человек это то, что он ест и пьёт. У нас только качественные ингредиенты.</p>
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="reference">
+  <div id="history" class="reference">
     <div class="container-small">
       <h2 class="section-title">Немного истории</h2>
       <dl>
@@ -141,53 +141,55 @@
           ослышались!
           Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!</p>
         <cite class="review-author">Газета столичный Стольник</cite>
-        <a class="btn" href="#">Читать далее</a>
+        <a class="btn btn-review" href="#">Читать далее</a>
       </blockquote>
     </div>
   </div>
 
-  <div class="assortment">
-    <h2 class="section-title">Ассортимент</h2>
-    <table class="price-list">
-      <tr>
-        <th>Название</th>
-        <th>Алк.</th>
-        <th>Ккал</th>
-        <th>Объём</th>
-        <th>Стоимость</th>
-      </tr>
-      <tr>
-        <td class="price-name">Классика</td>
-        <td>&lt; 1,2%</td>
-        <td>33</td>
-        <td>330 мл</td>
-        <td>120 Р.</td>
-      </tr>
-      <tr>
-        <td class="price-name">Шабаш</td>
-        <td>&gt; 1,2%</td>
-        <td>45</td>
-        <td>330 мл</td>
-        <td>250 Р.</td>
-      </tr>
-      <tr>
-        <td class="price-name">Вахтёр <sup>Новинка</sup></td>
-        <td>&lt; 1%</td>
-        <td>35</td>
-        <td>0,5 л</td>
-        <td>150 Р.</td>
-      </tr>
-      <tr>
-        <td class="price-name">Романтик <sup>Новинка</sup></td>
-        <td>&lt; 0,5%</td>
-        <td>27</td>
-        <td>0,5 л</td>
-        <td>90 Р.</td>
-      </tr>
-    </table>
+  <div id="assort" class="assortment">
+    <div class="container-small">
+      <h2 class="section-title">Ассортимент</h2>
+      <table class="price-list">
+        <tr>
+          <th>Название</th>
+          <th>Алк.</th>
+          <th>Ккал</th>
+          <th>Объём</th>
+          <th class="price-cost">Стоимость</th>
+        </tr>
+        <tr>
+          <td class="price-name">Классика</td>
+          <td>&lt; 1,2%</td>
+          <td>33</td>
+          <td>330 мл</td>
+          <td class="price-cost">120 Р.</td>
+        </tr>
+        <tr>
+          <td class="price-name">Шабаш</td>
+          <td>&gt; 1,2%</td>
+          <td>45</td>
+          <td>330 мл</td>
+          <td class="price-cost">250 Р.</td>
+        </tr>
+        <tr>
+          <td class="price-name">Вахтёр <sup>Новинка</sup></td>
+          <td>&lt; 1%</td>
+          <td>35</td>
+          <td>0,5 л</td>
+          <td class="price-cost">150 Р.</td>
+        </tr>
+        <tr>
+          <td class="price-name">Романтик <sup>Новинка</sup></td>
+          <td>&lt; 0,5%</td>
+          <td>27</td>
+          <td>0,5 л</td>
+          <td class="price-cost">90 Р.</td>
+        </tr>
+      </table>
+    </div>
   </div>
 
-  <div class="ordering">
+  <div id="ordering" class="ordering">
     <div class="container-small">
       <h2 class="section-title">Заказать</h2>
       <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас
@@ -199,13 +201,15 @@
           <label for="name">Представьтесь:</label>
           <input type="text" name="name" id="name">
         </div>
-        <div class="order-form-group">
-          <label for="phone">Номер телефона:</label>
-          <input type="text" name="phone" id="phone">
-        </div>
-        <div class="order-form-group">
-          <label for="extraPhone">Доп. номер:</label>
-          <input type="text" name="extraPhone" id="extraPhone">
+        <div class="clearfix">
+          <div class="order-form-group order-form-group-left-part ">
+            <label for="phone">Номер телефона:</label>
+            <input type="text" name="phone" id="phone">
+          </div>
+          <div class="order-form-group order-form-group-right-part">
+            <label for="extraPhone">Доп. номер:</label>
+            <input type="text" name="extraPhone" id="extraPhone">
+          </div>
         </div>
         <div class="order-form-group">
           <label for="email">Email:</label>
@@ -227,14 +231,14 @@
             Я согласен получать квасную рассылку
           </label>
         </div>
-        <input type="submit" class="btn" value="Отправить заказ">
+        <input type="submit" class="btn btn-quick-order" value="Отправить заказ">
       </form>
     </div>
   </div>
 
   <div class="page-footer">
     <div class="container-big">
-      <div class="footer-top">
+      <div class="footer-top clearfix">
         <div class="footer-logo">
           <img src="img/logo.png" alt="logo">
         </div>
